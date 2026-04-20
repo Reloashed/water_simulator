@@ -50,7 +50,6 @@ public class App {
             Thread.sleep(500);
         }
     }
-    // problem when go right move 1 from 0 to 1 then next for round it look if 1 is 1 and then over and over until bumm
     public void createNewGrid(Direction direction) {
         if (direction.yEnd > 0) {
             for (int y = direction.yStart; y < direction.yEnd; y = y += direction.yContinue) {
